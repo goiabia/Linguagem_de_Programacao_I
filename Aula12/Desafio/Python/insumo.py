@@ -34,19 +34,19 @@ class Insumo:
         return True
 
 
-# ── Testes ──────────────────────────────────────────────────────────────
-MES_ATUAL = 5  # maio
+# Testes 
+MES_ATUAL = 5 
 
 # Insumo válido
 amendoim_fresco = Insumo("Amendoim Torrado", 20, 8)
 print(f"{amendoim_fresco.get_nome()} está válido? "
-      f"{amendoim_fresco.esta_valido(MES_ATUAL)}")          # True
+      f"{amendoim_fresco.esta_valido(MES_ATUAL)}")         
 
 # Insumo vencido
 amendoim_murcho = Insumo("Amendoim Granulado", 5, 3)
 print(f"{amendoim_murcho.get_nome()} está válido? "
-      f"{amendoim_murcho.esta_valido(MES_ATUAL)}")          # False + alerta
+      f"{amendoim_murcho.esta_valido(MES_ATUAL)}")          
 
 # Tentativa de mês inválido
-amendoim_errado = Insumo("Amendoim Salgado", 10, 13)        # mês 13 bloqueado
-print(f"Validade mantida: {amendoim_errado.get_mes_validade()}")  # None
+amendoim_errado = Insumo("Amendoim Salgado", 10, 13)        
+print(f"Validade mantida: {amendoim_errado.get_mes_validade()}")  
